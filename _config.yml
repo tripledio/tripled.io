@@ -1,0 +1,37 @@
+# Site settings
+title: Triple D
+header-img: img/home-bg.jpg
+email: blog@tripled.io
+copyright_name: Triple D
+description: "TripleD blog"
+baseurl: ""
+url: "http://tripled.io"
+disqus: "TripleD"
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: "UA-86097038-1"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+
+# authors
+authors:
+  domenique:
+    username: "domenique"
+    name: "Domenique Tilleuil"
+    bio: "Software craftsmen journeyman. Professional java code juggler. Avid fan of DDD and XP practices"
+    location: "Zoersel, Belgium"
+    url: "http://www.dti-consulting.be"
+    image: "/img/domenique.png"
+  guido:
+      username: "guido"
+      name: "Guido Dechamps"
+      bio: "Old cranky software craftsmen"
+      location: "Belgium"
+      image: "/img/guido.jpg"
