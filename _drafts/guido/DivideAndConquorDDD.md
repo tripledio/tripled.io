@@ -20,7 +20,7 @@ Dividing and conquering is a classic strategy, one that we often use in our dail
 
 ###### The Problem space
 We start by identifying the area of business problems we are trying the solve. We call this collection of problems the **problem space**.
-
+https://en.wikipedia.org/wiki/Problem_domain
 ###### The Domain
 This problem space resides in a certain **domain**, a business area. A domain is an area where people are working, solving certain problems in the real world. Solving their problem often requires certain deep knowledge of the functional business area, the domain. Therefore there are often **domain experts** associated with a domain. Domain experts are very well versed in solving the problem in that area, that domain.  If a domain does not require deep knowledge, it is an area that probably isn't worth worrying a lot about since anyone can do it. 
 
