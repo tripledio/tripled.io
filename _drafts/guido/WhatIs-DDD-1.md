@@ -14,7 +14,7 @@ What is Domain Driven Design (DDD)?
 Domain driven design, or DDD in short, is a term that was coined by Eric Evans in his [book](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&s=books&qid=1238687848&sr=8-1) of the same title.
 With the rise of the microservices architecture **domain driven design** has come back into the spotlights . It can easily be one of the buzz words that they throw at you during a job interview. Or a requirement for a certain job. But what is DDD exactly? 
 
-[According to the ddd community](http://dddcommunity.org/learning-ddd/what_is_ddd/) 
+According to the [ddd community](http://dddcommunity.org/learning-ddd/what_is_ddd/) 
 
 > Domain-driven design (DDD) is an **approach** to developing software for complex needs by deeply connecting the implementation to an evolving model of the core business concepts.
 
@@ -38,7 +38,9 @@ DDD
 
 So given the above definitions i will give you my 'own' definition of DDD.
 
->Domain driven design is the **goal** of **designing** tailor made solutions for specific problems in different business **domains*.
+
+**Domain driven design is the _goal_ of _designing_ tailor made solutions for problems that are specific to given business _domains_.**
+
 
 To me DDD is about striving to **design** _quality software_ where the **driving** force is a specific **domain**. I see DDD as a goal. Something we want to achieve. While there are many different techniques to achieve this goal, the techniques in itself aren't the goal. Nor does a technique in itself guarantee that the goal will be reached.
 
