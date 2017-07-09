@@ -35,3 +35,9 @@ authors:
       bio: "Old cranky software craftsmen"
       location: "Belgium"
       image: "/img/guido.jpg"
+  kris:
+      username: "kris"
+      name: "Kris Hofmans"
+      bio: "Finds Software Development interesting, especially the ways people find to mess it up."
+      location: "Belgium"
+      image: "/img/kris.jpg"
