@@ -2,7 +2,7 @@
 layout: post
 author: guido
 title: What is domain driven design?
-header-img: "img/japanese_garden.png"
+header-img: "img/DDD-books.jpg"
 category: DDD
 tags: DDD, Software development
 excerpt: A clear explanation of what DDD is
@@ -55,7 +55,7 @@ Why Domain Driven Design?
 ------------------
 So why should we try to achieve that goal? Why would you want DDD? What is so special about wanting to create a solution for a given problem that really fits the domain? 
 
-In short i can guarantee you that a very high percentage of software solutions are not driven by the domain.  More often then not they are driven by the data used to capture the solution. Or by the tools, technologies that are popular at the moment. Which places a huge mortgage on the software from the get go. But that subject deserves a post on its own.
+In short I can guarantee you that a very high percentage of software solutions are not driven by the domain.  More often then not they are driven by the data used to capture the solution. Or by the tools, technologies that are popular at the moment. Which places a huge mortgage on the software from the get go. But that is a subject that definitely deserves a post on its own.
 
 In contrast, DDD enables us to solve complex business problems in an elegant and sustainable manner. Because each solution is designed specifically to tackle a given problem. The solutions are also tailor made for the business domain which allows for a much greater flexibility in creating and adding new features. Separating the different problems in the different domains from each other DDD enables us to really tackle the most important _domain_ problems. 
 
