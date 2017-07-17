@@ -1,41 +1,15 @@
 ---
 layout: post
 author: guido
+title: The anemic domain model
 header-img: "img/anemicDomainModel.jpg"
+tags: DDD, Software development
+excerpt: An exploration of the anemic domain model pattern in the context of an object oriented language.
 ---
-In this blog post i will discuss the anemic domain model in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
 
-**Contents**
+In this blog post i will discuss the anemic domain model pattern in the context of an object oriented language. I'll explain what the anemic domain model is, what it isn't, how i view it. I'll make use of a code example written in java and tested with cucumber.
 
-1. [Anemic domain model](#1)
-  + [a. What is it](#1.a)
-  + [b. Where does the name come from](#1.b)
-  + [c. Is it bad](#1.c)
-1. [The paperboy example](#2)
-  + [a. Description](#2.a)
-  + [b. The paperboy use cases](#2.b)
-1. [The paper boy as an anemic model](#3)
-  + [a. Model code](#3.a)
-  + [b. Code for delivery logic](#3.b)
-1. [Evaluation of the anemic domain model](#4)
-  + [a. Rules violated](#4.a)
-     + [a.I Tell, don't ask](#4.a.i)
-     + [a.II Law of demeter](#4.a.ii)
-     + [a.III Single responsibility principle](#4.a.iii)
-  + [b. Code smells](#4.b)
-     + [b.I Feature envy](#4.b.i)
-     + [b.II Train wrecks](#4.b.ii)
-     + [b.III Hybrids](#4.b.iii)
-     + [b.IV Mutable state](#4.b.iv)
-     + [b.V No enforced invariants](#4.b.v)
-  + [c. Appeal to authority](#4.c)
-  + [d. Advantages](#4.d)
-  + [e. My opinion](#4.e)
-1. [A real domain model](#5)
-  + [a. Refactor](#5.a)
-  + [b. Advantages](#5.b)
-  + [c. Code of the real domain model](#5.c)
-  + [d. Unit tests](#5.d)
+---
 
 ## 1. Anemic domain model <a name="1"/>
 ###  a. What is the anemic domain model <a name="1.a"/>
@@ -582,16 +556,56 @@ public class WalletTest {
     }
 }
 ```
+
+
+Conclusion
+---
+
+After this long explanation of the anemic domain model i hopefully have convinced you that it is not something you should strive for in an object oriented language. It really deserves the acronym **[POOP](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)** [^10]. Where a proper Object Oriented implementation offers so much more...
+
 ----------
-*Guido Dechamps*
+
+_**Table of Contents**_
+
+1. _[Anemic domain model](#1)_
+  + _[a. What is it](#1.a)_
+  + _[b. Where does the name come from](#1.b)_
+  + _[c. Is it bad](#1.c)_
+1. _[The paperboy example](#2)_
+  + _[a. Description](#2.a)_
+  + _[b. The paperboy use cases](#2.b)_
+1. _[The paper boy as an anemic model](#3)_
+  + _[a. Model code](#3.a)_
+  + _[b. Code for delivery logic](#3.b)_
+1. _[Evaluation of the anemic domain model](#4)_
+  + _[a. Rules violated](#4.a)_
+       + _[a.I Tell, don't ask](#4.a.i)_
+       + _[a.II Law of demeter](#4.a.ii)_
+       + _[a.III Single responsibility principle](#4.a.iii)_
+  + _[b. Code smells](#4.b)_
+       + _[b.I Feature envy](#4.b.i)_
+       + _[b.II Train wrecks](#4.b.ii)_
+       + _[b.III Hybrids](#4.b.iii)_
+       + _[b.IV Mutable state](#4.b.iv)_
+       + _[b.V No enforced invariants](#4.b.v)_
+  + _[c. Appeal to authority](#4.c)_
+  + _[d. Advantages](#4.d)_
+  + _[e. My opinion](#4.e)_
+1. _[A real domain model](#5)_
+  + _[a. Refactor](#5.a)_
+  + _[b. Advantages](#5.b)_
+  + _[c. Code of the real domain model](#5.c)_
+  + _[d. Unit tests](#5.d)_
 
 **Footnotes**
 
-[^1]: [The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)
-[^2]: [Paperboy example code base](https://github.com/GuidoDechamps/Paperboy)
-[^3]: [Gherkin](https://cucumber.io/docs/reference)
-[^4]: [Martin Fowler on anemic domain model](http://www.martinfowler.com/bliki/AnemicDomainModel.html)
-[^5]: [Uncle bob on anemic domain model](https://groups.google.com/forum/#!searchin/clean-code-discussion/anemic$20domain/clean-code-discussion/FlZq3EWiFNU/cRwTytc3qlcJ)
-[^6]: [Udi Dahan on anemic domain model](https://twitter.com/udidahan/status/724869999270223873)
-[^7]: [Greg Young on anemic domain model](http://codebetter.com/gregyoung/2009/07/15/the-anemic-domain-model-pattern/)
-[^8]: [Transaction script](http://martinfowler.com/eaaCatalog/transactionScript.html)
+[^1]: _[The law of demeter](http://www.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/paper-boy/demeter.pdf)_
+[^2]: _[Paperboy example code base](https://github.com/GuidoDechamps/Paperboy)_
+[^3]: _[Gherkin](https://cucumber.io/docs/reference)_
+[^4]: _[Martin Fowler on anemic domain model](http://www.martinfowler.com/bliki/AnemicDomainModel.html)_
+[^5]: _[Uncle bob on anemic domain model](https://groups.google.com/forum/#!searchin/clean-code-discussion/anemic$20domain/clean-code-discussion/FlZq3EWiFNU/cRwTytc3qlcJ)_
+[^6]: _[Udi Dahan on anemic domain model](https://twitter.com/udidahan/status/724869999270223873)_
+[^7]: _[Greg Young on anemic domain model](http://codebetter.com/gregyoung/2009/07/15/the-anemic-domain-model-pattern/)_
+[^8]: _[Transaction script](http://martinfowler.com/eaaCatalog/transactionScript.html)_
+[^9]: _[fragile code](https://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/)_ 
+[^10]: _[P.O.O.P.](https://www.allacronyms.com/POOP/Procedural_Object_Oriented_Programming)_
